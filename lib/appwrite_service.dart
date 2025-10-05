@@ -1,7 +1,7 @@
 import 'package:appwrite/appwrite.dart';
 
 // Appwrite config (copy from Console > Connect snippet)
-const String appwriteProjectId = '68df737e0017257f9f6b';
+const String appwriteProjectId = '68e1f67e00351fa231a2';
 // IMPORTANT: Must point to REST API path, not the console. Example: http://localhost/v1
 const String appwriteEndpoint = 'http://localhost/v1';
 
@@ -20,8 +20,8 @@ class AppwriteService {
   Future<void> insertUser(String name, int age) async {
     try {
       final result = await databases.createDocument(
-        databaseId: '68df75dc0013fc930f8a',     // Database ID
-        collectionId: '68df7606002ebbac8cf9',   // Collection ID
+        databaseId: '68e1f76100216a226388',     // Database ID
+        collectionId: '68e1f77e00200eeb541f',   // Collection ID
         documentId: ID.unique(),
         data: {
           'name': name,
